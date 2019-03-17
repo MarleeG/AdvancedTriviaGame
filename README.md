@@ -1,6 +1,6 @@
 # AdvancedTriviaGame
 
-Are you a true Family Guy Fan? Answer all the questions correctly and find out!
+Are you a true Family Guy Fan? Answer all the questions correctly within the given amount of time and find out!
 
 ## Built With 
 
