@@ -13,7 +13,6 @@ TECHNOLOGIES
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Bootstrap](https://getbootstrap.com/)
 - [HTML](https://www.w3schools.com/html/)
-- [Popper.js](https://popper.js.org/)
 - [Google Fonts](https://fonts.google.com/)
 
 ## Deployed App
