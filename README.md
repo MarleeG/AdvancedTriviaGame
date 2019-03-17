@@ -1,11 +1,7 @@
 # AdvancedTriviaGame
 
-## Under Constrcution
+Are you a true Family Guy Fan? Answer all the questions correctly and find out!
 
-INSTRUCTIONS
-Choose your character from a list of Black Panther cast members and fight all the defenders to win the game! 
-
-TECHNOLOGIES
 ## Built With 
 
 - [Javscript](https://www.javascript.com/)
@@ -16,5 +12,4 @@ TECHNOLOGIES
 - [Google Fonts](https://fonts.google.com/)
 
 ## Deployed App
-Coming soon 
-* [Advanced Trivia Game] - App 
+* [Advanced Trivia Game](https://marleeg.github.io/AdvancedTriviaGame/) - App 
