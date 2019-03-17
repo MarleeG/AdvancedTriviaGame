@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <title>Page Title</title>
+    <title>Family Guy Guru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- External Stylesheets -->
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -22,11 +23,64 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Poppins" rel="stylesheet">
+
     <!-- Internal Stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="container-fluid">
+        <!-- title -->
+        <div class="row">
+            <div class="col-lg-12 text-center title">
+                Family Guy Guru Quiz
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid" id='score_board'>
+                    <div class="container text-center">
+                        <h4 class="display-4">Scores</h4>
+                        <p class="lead correct text-center"></p>
+                        <p class="lead incorrect text-center"></p>
+                        <button type="button" class="btn btn-dark btn-lg" id='play_again_btn'>Play Again!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- timer -->
+        <div class="row">
+            <div class="col-lg-12 timer text-center">
+
+            </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="row text-center">
+            <!-- Question -->
+            <div class="col-lg-12 question"></div>
+
+
+            <!-- options -->
+            <div class="col-lg-12 options text-center">
+
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="alert alert-success text-center" role="alert" id='game_alert_message'></div>
+            </div>
+        </div>
+
+
+    </div>
+
 
 
 

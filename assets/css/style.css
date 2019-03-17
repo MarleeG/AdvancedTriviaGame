@@ -1,0 +1,36 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#game_alert{
+    width: 500px;
+    margin: auto;
+}
+
+#game_alert_message{
+    width: 500px;
+    margin: auto;
+}
+
+#score_board{
+    width: 700px;
+    margin:auto;
+}
+
+.title{
+    font-family: 'Lilita One', cursive;
+    font-size: 65px;
+}
+
+.timer{
+    font-size: 30px;
+}
+
+/* ol.orderList{
+    list-style-type: lower-alpha;
+} */
+
+.option{
+    width: 500px;
+    margin: auto;
+}
