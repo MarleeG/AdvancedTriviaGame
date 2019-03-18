@@ -2,11 +2,6 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-#game_alert{
-    width: 500px;
-    margin: auto;
-}
-
 #game_alert_message{
     width: 500px;
     margin: auto;
@@ -26,11 +21,37 @@ body{
     font-size: 30px;
 }
 
-/* ol.orderList{
-    list-style-type: lower-alpha;
-} */
-
 .option{
     width: 500px;
     margin: auto;
+}
+
+
+@media only screen and (max-width: 380px) {
+    #game_alert_message{
+        width: 300px;
+    }
+
+    .option{
+        width: 300px;
+    }
+
+    #score_board{
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 535px) {
+    #game_alert_message{
+        width: 350px;
+    }
+
+    .option{
+        width: 350px;
+    }
+
+    #score_board{
+        width: 350px;
+    }
 }
