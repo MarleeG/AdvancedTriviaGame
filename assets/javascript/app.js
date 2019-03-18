@@ -1,6 +1,3 @@
-const log = console.log;
-const quizLink = `https://play.howstuffworks.com/quiz/family-guy-quiz`;
-
 $(document).ready(function () {
     const questions_n_answers = {
         1: {
@@ -42,11 +39,40 @@ $(document).ready(function () {
     let currentGuess = '';
     let correctGuesses = 0;
     let incorrectGuesses = 0;
-    let timer = 25;
-    $('.timer').text(`Time: ${timer}`);
+    let timer = 0;
 
-    let intervalTimer = setInterval(decreaseTimer, 1000);
-    displayQuesions();
+    let intervalTimer = 0;
+
+    // added for start button
+    $('.timer').hide();
+    $('.options').hide();
+    $('.question').hide();
+
+    $('#game_alert_message').hide();
+    $('#score_board').hide();
+
+    $('#start_button').on('click', () => {
+        timer = 25;
+        $('.timer').text(`Time: ${timer}`);
+        $('.timer').show();
+        
+        $('.options').show();
+        $('.question').show();
+
+        intervalTimer = setInterval(decreaseTimer, 1000);
+        displayQuesions();
+
+        $('.option').hover(function (event) {
+            let isHovering = $(this).is(':hover');
+            if (isHovering) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+
+        $('#start_button').hide();
+    });
 
     // decreases the timer
     function decreaseTimer() {
@@ -66,7 +92,6 @@ $(document).ready(function () {
         }
     }
 
-
     // displays the questions
     function displayQuesions() {
         currentQuestion = questions_n_answers[questionNumber].question;
@@ -76,7 +101,6 @@ $(document).ready(function () {
         let options = questions_n_answers[questionNumber].options;
 
         options.forEach((option) => {
-            log(`option: ${option}`);
             let list = $(`<li>`);
             list.attr('value', option);
             list.addClass('list-group-item');
@@ -209,5 +233,5 @@ $(document).ready(function () {
         });
 
 
-    })
+    });
 });
