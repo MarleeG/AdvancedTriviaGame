@@ -7,6 +7,10 @@ body{
     margin: auto;
 }
 
+.quote{
+    display: block;
+}
+
 #score_board{
     width: 700px;
     margin: auto;

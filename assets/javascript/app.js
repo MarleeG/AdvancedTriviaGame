@@ -32,6 +32,8 @@ $(document).ready(function () {
         }
     }
 
+    const quotes = [`“Cool Whip!” – Stewie`, `“I am so not competitive. In fact, I am the least non-competitive. So I win.” -Peter,`,
+        `“Now I may be an idiot, but there’s one thing I am not sir, and that sir, is an idiot.” – Peter`, `“It’s Peanut Butter  Jelly Time – Stewie`];
     $('#game_alert_message').hide();
     $('#score_board').hide();
     let questionNumber = 1;
@@ -55,7 +57,7 @@ $(document).ready(function () {
         timer = 25;
         $('.timer').text(`Time: ${timer}`);
         $('.timer').show();
-        
+
         $('.options').show();
         $('.question').show();
 
@@ -199,7 +201,11 @@ $(document).ready(function () {
             $('#game_alert_message').hide();
 
             $('.correct').text(`Correct: ${correctGuesses}`);
-            $('.incorrect').text(`Incorrect: ${incorrectGuesses}`)
+            $('.incorrect').text(`Incorrect: ${incorrectGuesses}`);
+
+
+            let randomQuote = Math.floor((Math.random() * quotes.length));
+            $('i.quote').text(quotes[randomQuote]);
             $('#score_board').show();
         }
     }
